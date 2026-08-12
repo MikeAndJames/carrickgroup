@@ -56,8 +56,10 @@
         <h1 data-i18n="hero.title">Dịch Vụ Tư Vấn Du Học & Hỗ Trợ Định Cư Anh Quốc</h1>
         <p data-i18n="hero.subtitle">Tư vấn lộ trình du học trường tư thục, đại học, tìm kiếm nơi ở sinh viên và hỗ trợ định cư trọn gói do bà Anh Đào Carrick (BA, PG Cert, MA, FCCA) trực tiếp tư vấn.</p>
         
+        <!-- Two Separate Direct Messaging Buttons -->
         <div class="hero-ctas">
-          <a href="https://zalo.me/84949686098" target="_blank" class="btn btn-gold" data-i18n="hero.ctaPrimary">Liên Hệ Qua Zalo / WhatsApp</a>
+          <a href="https://wa.me/447490130207" target="_blank" class="btn btn-gold" style="background: #25D366; color: #FFFFFF;" data-i18n="hero.ctaWhatsApp">💬 Chat qua WhatsApp</a>
+          <a href="https://zalo.me/84949686098" target="_blank" class="btn btn-gold" style="background: #0068FF; color: #FFFFFF;" data-i18n="hero.ctaZalo">💬 Chat qua Zalo</a>
           <a href="#services" class="btn btn-outline-gold" data-i18n="hero.ctaSecondary">Xem Dịch Vụ</a>
         </div>
 
@@ -272,12 +274,15 @@
           <textarea id="modal-message" rows="3" placeholder="Nội dung yêu cầu tư vấn..."></textarea>
         </div>
 
-        <button type="submit" class="btn btn-gold" style="width: 100%; margin-top: 10px;" data-i18n="modal.submitBtn">Gửi Yêu Cầu Qua WhatsApp / Email</button>
+        <div style="display: flex; gap: 12px; margin-top: 16px; flex-wrap: wrap;">
+          <button type="button" id="modal-submit-wa" class="btn btn-gold" style="flex: 1; background: #25D366; color: #FFFFFF;" data-i18n="modal.submitWhatsApp">💬 Gửi qua WhatsApp</button>
+          <button type="button" id="modal-submit-zalo" class="btn btn-gold" style="flex: 1; background: #0068FF; color: #FFFFFF;" data-i18n="modal.submitZalo">💬 Gửi qua Zalo</button>
+        </div>
       </form>
     </div>
   </div>
 
-  <!-- Floating Contact Buttons -->
+  <!-- Floating Contact Buttons (2 Separate Dedicated Buttons) -->
   <div class="floating-widget">
     <a href="https://wa.me/447490130207" target="_blank" class="widget-btn widget-wa" title="Chat WhatsApp UK">💬 WhatsApp (+44)</a>
     <a href="https://zalo.me/84949686098" target="_blank" class="widget-btn widget-zalo" title="Chat Zalo Vietnam">💬 Zalo (+84)</a>

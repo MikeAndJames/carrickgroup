@@ -15,7 +15,8 @@ const TRANSLATIONS = {
       badge: "🇬🇧 Professional UK Advisory",
       title: "Educational Advisory & Relocation Services for Vietnamese Families",
       subtitle: "Personalized guidance for UK school & university admissions, student accommodation, and relocation assistance led by Anh Đào Carrick (BA, PG Cert, MA, FCCA).",
-      ctaPrimary: "Contact via WhatsApp / Zalo",
+      ctaWhatsApp: "💬 Chat on WhatsApp",
+      ctaZalo: "💬 Chat on Zalo",
       ctaSecondary: "View Services",
       stat1Title: "UK & Vietnam Presence",
       stat1Desc: "Offices in London & Hanoi",
@@ -97,7 +98,8 @@ const TRANSLATIONS = {
       serviceOption3: "Student Housing / Accommodation",
       serviceOption4: "Guardianship & Relocation",
       messageLabel: "Your Enquiry",
-      submitBtn: "Send Inquiry via WhatsApp / Email"
+      submitWhatsApp: "💬 Send via WhatsApp",
+      submitZalo: "💬 Send via Zalo"
     }
   },
   vi: {
@@ -114,7 +116,8 @@ const TRANSLATIONS = {
       badge: "🇬🇧 Tư Vấn Du Học & Định Cư Anh Quốc",
       title: "Dịch Vụ Tư Vấn Du Học & Hỗ Trợ Định Cư Anh Quốc",
       subtitle: "Tư vấn lộ trình du học trường tư thục, đại học, tìm kiếm nơi ở sinh viên và hỗ trợ định cư trọn gói do bà Anh Đào Carrick (BA, PG Cert, MA, FCCA) trực tiếp tư vấn.",
-      ctaPrimary: "Liên Hệ Qua Zalo / WhatsApp",
+      ctaWhatsApp: "💬 Chat qua WhatsApp",
+      ctaZalo: "💬 Chat qua Zalo",
       ctaSecondary: "Xem Dịch Vụ",
       stat1Title: "Hiện Diện Song Song",
       stat1Desc: "Văn phòng tại London & Hà Nội",
@@ -196,7 +199,8 @@ const TRANSLATIONS = {
       serviceOption3: "Tìm Nhà Ở / Căn Hộ Du Học",
       serviceOption4: "Người Giám Hộ & Hỗ Trợ An Cư",
       messageLabel: "Nội dung cần trao đổi",
-      submitBtn: "Gửi Yêu Cầu Qua WhatsApp / Email"
+      submitWhatsApp: "💬 Gửi qua WhatsApp",
+      submitZalo: "💬 Gửi qua Zalo"
     }
   }
 };

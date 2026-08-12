@@ -61,11 +61,10 @@ function applyLanguage() {
   });
 }
 
-// Modal System
+// Modal System with 2 Separate Direct Channels
 function initModal() {
   const modal = document.getElementById('consultation-modal');
   const closeBtn = document.getElementById('modal-close-btn');
-  const form = document.getElementById('consultation-form');
 
   if (closeBtn && modal) {
     closeBtn.addEventListener('click', () => {
@@ -73,22 +72,41 @@ function initModal() {
     });
   }
 
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const name = document.getElementById('modal-name')?.value;
-      const phone = document.getElementById('modal-phone')?.value;
-      const email = document.getElementById('modal-email')?.value;
-      const service = document.getElementById('modal-service')?.value;
-      const message = document.getElementById('modal-message')?.value;
+  const btnWa = document.getElementById('modal-submit-wa');
+  const btnZalo = document.getElementById('modal-submit-zalo');
 
-      const text = `Họ tên: ${name}%0ASĐT: ${phone}%0AEmail: ${email}%0ADịch vụ: ${service}%0ANội dung: ${message}`;
-      
-      // Open WhatsApp direct trigger with pre-filled text
-      window.open(`https://wa.me/447490130207?text=${text}`, '_blank');
-      modal.classList.remove('active');
+  if (btnWa) {
+    btnWa.addEventListener('click', (e) => {
+      e.preventDefault();
+      sendInquiry('wa');
     });
   }
+
+  if (btnZalo) {
+    btnZalo.addEventListener('click', (e) => {
+      e.preventDefault();
+      sendInquiry('zalo');
+    });
+  }
+}
+
+function sendInquiry(channel) {
+  const name = document.getElementById('modal-name')?.value || '';
+  const phone = document.getElementById('modal-phone')?.value || '';
+  const email = document.getElementById('modal-email')?.value || '';
+  const service = document.getElementById('modal-service')?.value || '';
+  const message = document.getElementById('modal-message')?.value || '';
+
+  const text = `Họ tên: ${name}%0ASĐT: ${phone}%0AEmail: ${email}%0ADịch vụ: ${service}%0ANội dung: ${message}`;
+  
+  if (channel === 'wa') {
+    window.open(`https://wa.me/447490130207?text=${text}`, '_blank');
+  } else {
+    window.open(`https://zalo.me/84949686098`, '_blank');
+  }
+
+  const modal = document.getElementById('consultation-modal');
+  if (modal) modal.classList.remove('active');
 }
 
 function openConsultationModal(presetTopic = '') {
