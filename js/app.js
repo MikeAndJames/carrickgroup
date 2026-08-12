@@ -28,12 +28,15 @@ function applyLanguage() {
   // Update HTML lang attribute
   document.documentElement.lang = currentLang;
 
-  // Update button text
+  // Update button text to clearly hint the user to switch to their language
   const langToggleBtn = document.getElementById('lang-toggle-btn');
   if (langToggleBtn) {
     langToggleBtn.innerHTML = currentLang === 'en' 
-      ? `🇻🇳 <span>Tiếng Việt</span>` 
-      : `🇬🇧 <span>English</span>`;
+      ? `🇻🇳 <span>Chuyển sang Tiếng Việt</span>` 
+      : `🇬🇧 <span>Switch to English</span>`;
+    langToggleBtn.title = currentLang === 'en'
+      ? 'Chuyển đổi giao diện sang Tiếng Việt'
+      : 'Switch website interface to English';
   }
 
   // Update all elements with data-i18n attributes
