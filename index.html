@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrick Group | Tư Vấn Du Học & Định Cư Anh Quốc | UK Education Advisory</title>
+  <meta name="description" content="Tư vấn du học Anh Quốc, trường nội trú tư thục, đại học top đầu, bất động sản du học và dịch vụ định cư trọn gói do bà Anh Đào Carrick (FCCA) trực tiếp điều hành." />
+  <meta name="keywords" content="du hoc anh, carrick group, anh dao carrick, truong noi tru uk, dinh cu anh, nha o du hoc london, tu van du hoc viet nam" />
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Carrick Group - Gateway to Premier UK Education & Relocation" />
+  <meta property="og:description" content="Top UK Boarding Schools, Universities, Luxury Student Housing & Concierge Services for Vietnamese Families." />
+  <meta property="og:image" content="assets/hero-bg.jpg" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <img src="assets/logo.png" alt="Carrick Group Logo" />
+        <div class="brand-text">
+          <span class="brand-name">CARRICK GROUP</span>
+          <span class="brand-sub" data-i18n="nav.tagline">Premier UK Education Advisory</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" data-i18n="nav.home">Trang chủ</a></li>
+        <li><a href="#about" data-i18n="nav.about">Về Anh Đào Carrick</a></li>
+        <li><a href="#services" data-i18n="nav.services">Dịch vụ</a></li>
+        <li><a href="#schools" data-i18n="nav.schools">Tìm Trường UK</a></li>
+        <li><a href="#calculator" data-i18n="nav.calculator">Tính Chi Phí</a></li>
+        <li><a href="#offices" data-i18n="nav.offices">Văn phòng</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <button id="lang-toggle-btn" class="lang-btn">
+          🇬🇧 <span>English</span>
+        </button>
+        <button class="btn btn-gold btn-sm" onclick="openConsultationModal()" data-i18n="nav.contact">
+          Đặt Lịch Tư Vấn
+        </button>
+        <div class="mobile-toggle" id="mobile-menu-toggle">☰</div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <span class="hero-badge" data-i18n="hero.badge">🇬🇧 Chuyên Gia Du Học & Định Cư Anh Quốc Cho Gia Đình Việt</span>
+        <h1 data-i18n="hero.title">Cầu Nối Giáo Dục Đẳng Cấp & Định Cư Anh Quốc Cho Gia Đình Việt Nam</h1>
+        <p data-i18n="hero.subtitle">Tư vấn lộ trình du học tư thục, nội trú, đại học hàng đầu, hỗ trợ nhà ở cao cấp và dịch vụ định cư trọn gói do bà Anh Đào Carrick (BA, PG Cert, MA, FCCA) trực tiếp điều hành.</p>
+        
+        <div class="hero-ctas">
+          <button class="btn btn-gold" onclick="openConsultationModal()" data-i18n="hero.ctaPrimary">Đăng Ký Tư Vấn Trực Tiếp</button>
+          <a href="#schools" class="btn btn-outline-gold" data-i18n="hero.ctaSecondary">Khám Phá Trường Anh Quốc</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3 data-i18n="hero.stat1Number">100%</h3>
+            <p data-i18n="hero.stat1Label">Tỷ Lệ Đạt Visa & Nhập Học</p>
+          </div>
+          <div class="stat-item">
+            <h3 data-i18n="hero.stat2Number">50+</h3>
+            <p data-i18n="hero.stat2Label">Trường Đối Tác Hàng Đầu</p>
+          </div>
+          <div class="stat-item">
+            <h3 data-i18n="hero.stat3Number">15+ Năm</h3>
+            <p data-i18n="hero.stat3Label">Kinh Nghiệm Tài Chính & Giáo Dục UK</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card glass-card">
+        <img src="assets/consultation.jpg" alt="Carrick Group Advisory" class="hero-card-img" />
+        <h3 style="font-family: var(--font-serif); color: var(--color-gold-primary); margin-bottom: 8px;">London & Hanoi Headquarters</h3>
+        <p style="font-size: 0.9rem; color: var(--color-text-muted);">Trực tiếp đồng hành cùng học sinh Việt Nam từ những bước đầu tiên tại Hà Nội đến môi trường đại học tại London.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-box">
+          <img src="assets/consultation.jpg" alt="Anh Đào Carrick" />
+        </div>
+        <div class="about-content">
+          <span class="section-badge" data-i18n="about.badge">Giám Đốc Điều Hành</span>
+          <h2 style="font-family: var(--font-serif); font-size: 2.4rem; color: #FFF;" data-i18n="about.title">Bà Anh Đào Carrick</h2>
+          <h4 style="color: var(--color-gold-primary); margin-bottom: 20px;" data-i18n="about.subtitle">BA, PG Cert, MA, FCCA | Giám Đốc</h4>
+          <p style="margin-bottom: 16px; color: var(--color-text-muted);" data-i18n="about.bio1">Bà Anh Đào Carrick là Hội viên Hiệp hội Kế toán Giảng dạy Anh Quốc (FCCA), sở hữu các bằng Thạc sĩ và Chứng chỉ Cao cấp từ các viện giáo dục uy tín tại Vương Quốc Anh. Hoạt động song song tại London và Hà Nội, bà là cầu nối tin cậy đưa con em các gia đình Việt Nam đến với nền giáo dục tinh hoa Anh Quốc.</p>
+          <p style="color: var(--color-text-muted);" data-i18n="about.bio2">Với bề dày kinh nghiệm trong lĩnh vực tài chính, bất động sản và tư vấn tuyển sinh tại Anh, bà Anh Đào Carrick mang đến dịch vụ tư vấn cá nhân hóa, minh bạch — đồng hành cùng học sinh từ khâu chọn trường, nộp hồ sơ đại học, bảo hộ đến tư vấn tài chính cho gia đình.</p>
+
+          <ul class="about-credentials">
+            <li data-i18n="about.qualification1">Kế toán viên Công chứng Chuyên nghiệp Anh Quốc (FCCA)</li>
+            <li data-i18n="about.qualification2">Chuyên gia Chiến lược Tuyển sinh Trường Nội trú & Đại học UK</li>
+            <li data-i18n="about.qualification3">Hệ thống Văn phòng Trực tiếp tại London & Hà Nội</li>
+            <li data-i18n="about.qualification4">Dịch vụ Trọn gói: Định cư, Thuế, Nhà ở & Người Giám hộ</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section-padding" style="background: rgba(11, 25, 44, 0.4);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="services.badge">Dịch Vụ Chuyên Nghiệp</span>
+        <h2 data-i18n="services.title">Giải Pháp Toàn Diện Cho Học Sinh Việt Tại Anh Quốc</h2>
+        <p data-i18n="services.subtitle">Dành riêng cho Quý phụ huynh mong muốn mang lại môi trường học tập và sinh hoạt tốt nhất cho con em.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card glass-card">
+          <span class="service-icon">🎓</span>
+          <h3 data-i18n="services.card1Title">Trường Nội Trú & Phổ Thông Tư Thục</h3>
+          <p data-i18n="services.card1Desc">Tư vấn chiến lược nộp hồ sơ, luyện phỏng vấn và nhập học các trường nội trú top đầu Anh Quốc (chương trình GCSE & A-Levels).</p>
+        </div>
+
+        <div class="service-card glass-card">
+          <span class="service-icon">🏛️</span>
+          <h3 data-i18n="services.card2Title">Đại Học Hàng Đầu & Oxbridge</h3>
+          <p data-i18n="services.card2Desc">Tư vấn hồ sơ ứng tuyển nhóm trường Russell Group, Oxford, Cambridge; chỉnh sửa luận văn cá nhân và định hướng học bổng.</p>
+        </div>
+
+        <div class="service-card glass-card">
+          <span class="service-icon">🏠</span>
+          <h3 data-i18n="services.card3Title">Bất Động Sản & Nơi Ở Sinh Viên</h3>
+          <p data-i18n="services.card3Desc">Tìm kiếm căn hộ cao cấp, ở cùng gia đình bản xứ (Homestay) an toàn hoặc tư vấn mua/thuê nhà cho gia đình tại London và các thành phố du học.</p>
+        </div>
+
+        <div class="service-card glass-card">
+          <span class="service-icon">🛡️</span>
+          <h3 data-i18n="services.card4Title">Người Giám Hộ & Hỗ Trợ Sinh Hoạt</h3>
+          <p data-i18n="services.card4Desc">Đại diện giám hộ pháp lý tại Anh, đưa đón sân bay, theo dõi kết quả học tập và chăm sóc khẩn cấp 24/7 giúp phụ huynh yên tâm.</p>
+        </div>
+
+        <div class="service-card glass-card">
+          <span class="service-icon">💼</span>
+          <h3 data-i18n="services.card5Title">Tư Vấn Visa & Tài Chính Du Học</h3>
+          <p data-i18n="services.card5Desc">Hướng dẫn thủ tục Visa du học/định cư, tư vấn kế hoạch chuyển tiền học phí, thuế liên quốc gia và mở tài khoản ngân hàng Anh Quốc.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- School Finder Section -->
+  <section id="schools" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="schoolsSection.badge">Hệ Thống Giáo Dục</span>
+        <h2 data-i18n="schoolsSection.title">Danh Sách Trường & Đại Học Tiêu Biểu</h2>
+        <p data-i18n="schoolsSection.subtitle">Khám phá các cơ sở giáo dục chất lượng được Carrick Group hỗ trợ trực tiếp.</p>
+      </div>
+
+      <div class="school-controls">
+        <div class="filter-group">
+          <button class="filter-btn active" data-filter="all" data-i18n="schoolsSection.filterAll">Tất Cả Cấp Học</button>
+          <button class="filter-btn" data-filter="boarding" data-i18n="schoolsSection.filterBoarding">Trường Nội Trú / A-Levels</button>
+          <button class="filter-btn" data-filter="uni" data-i18n="schoolsSection.filterUni">Đại Học Top UK</button>
+          <button class="filter-btn" data-filter="foundation" data-i18n="schoolsSection.filterFoundation">Dự Bị Đại Học</button>
+        </div>
+
+        <div class="search-box">
+          <input type="text" id="school-search-input" placeholder="Tìm theo tên trường hoặc thành phố..." data-i18n="schoolsSection.searchPlaceholder" />
+        </div>
+      </div>
+
+      <div class="schools-grid" id="schools-grid">
+        <!-- Rendered dynamically via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Budget Estimator Section -->
+  <section id="calculator" class="section-padding" style="background: rgba(11, 25, 44, 0.4);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="calculator.badge">Dự Toán Ngân Sách</span>
+        <h2 data-i18n="calculator.title">Công Cụ Tính Chi Phí Du Học & Định Cư</h2>
+        <p data-i18n="calculator.subtitle">Dự toán chi phí học phí, sinh hoạt và nhà ở phù hợp với bậc học của con Quý vị.</p>
+      </div>
+
+      <div class="calc-card glass-card">
+        <div class="calc-grid">
+          <div class="calc-form">
+            <div class="calc-group">
+              <label data-i18n="calculator.levelLabel">Bậc Học Mong Muốn:</label>
+              <select id="calc-level">
+                <option value="boarding">Trường Nội Trú / Phổ Thông Tư Thục (Boarding)</option>
+                <option value="uni">Đại Học (Undergraduate / Postgrad)</option>
+                <option value="foundation">Dự Bị Đại Học / Foundation Pathway</option>
+              </select>
+            </div>
+
+            <div class="calc-group">
+              <label data-i18n="calculator.locationLabel">Khu Vực Học Tập:</label>
+              <select id="calc-location">
+                <option value="london">Thủ đô London & Lân Cận</option>
+                <option value="regional">Các Thành Phố Khác (Manchester, Oxford, Scotland)</option>
+              </select>
+            </div>
+
+            <div class="calc-group">
+              <label data-i18n="calculator.housingLabel">Hình Thức Ở:</label>
+              <select id="calc-housing">
+                <option value="boarding">Ký Túc Xá Trường Nội Trú (Bao Gồm Ăn Ở)</option>
+                <option value="luxury">Căn Hộ Dịch Vụ Cao Cấp Trung Tâm</option>
+                <option value="homestay">Ở Cùng Gia Đình Bản Xứ (Homestay)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="calc-result">
+            <div class="res-row">
+              <span data-i18n="calculator.tuitionPart">Học Phí Ước Tính:</span>
+              <strong id="res-tuition">£44,000 / yr</strong>
+            </div>
+            <div class="res-row">
+              <span data-i18n="calculator.livingPart">Nhà Ở & Sinh Hoạt Chi Phí:</span>
+              <strong id="res-living">£20,000 / yr</strong>
+            </div>
+            <div class="res-total-box">
+              <span data-i18n="calculator.totalEst">Ước Tính Tổng Chi Phí hàng Năm:</span>
+              <div class="res-total-val" id="res-total">£64,000 <span class="vnd-sub">(~2,048,000,000 VNĐ)</span></div>
+            </div>
+          </div>
+        </div>
+        <p style="font-size: 0.78rem; color: var(--color-text-muted); margin-top: 24px; text-align: center;" data-i18n="calculator.disclaimer">*Số liệu mang tính chất tham khảo. Chi phí thực tế phụ thuộc vào ngành học, trường và chi tiêu cá nhân.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offices Section -->
+  <section id="offices" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="offices.badge">Mạng Lưới Trực Tiếp</span>
+        <h2 data-i18n="offices.title">Hệ Thống Văn Phòng London & Hà Nội</h2>
+        <p data-i18n="offices.subtitle">Hỗ trợ trực tiếp 24/7 cho phụ huynh và học sinh cả ở Việt Nam và Vương Quốc Anh.</p>
+      </div>
+
+      <div class="offices-grid">
+        <div class="office-card glass-card">
+          <h3 data-i18n="offices.londonHead">🇬🇧 Trụ Sở Chính Tại London</h3>
+          <div class="office-details">
+            <p><strong>📍 Carrick Investment Co., Ltd:</strong><br /><span data-i18n="offices.londonAddr">192 Woodseer Street, London, E1 5HQ, Vương Quốc Anh</span></p>
+            <p><strong>📍 C&T Accountants Office:</strong><br /><span data-i18n="offices.londonBranchAddr">85 Tooting High Street, London, SW17 0SU, Vương Quốc Anh</span></p>
+            <p><span data-i18n="offices.phoneUK">Điện thoại / WhatsApp / Viber / Zalo (UK):</span> <strong>+44 749 013 0207</strong> | <strong>+44 800 002 9069</strong></p>
+          </div>
+        </div>
+
+        <div class="office-card glass-card">
+          <h3 data-i18n="offices.hanoiHead">🇻🇳 Văn Phòng Tại Hà Nội</h3>
+          <div class="office-details">
+            <p><strong>📍 Trụ Sở Chính:</strong><br /><span data-i18n="offices.hanoiHeadAddr">Số 28 (Dãy B5), 28B Điện Biên Phủ, P. Điện Biên, Q. Ba Đình, Hà Nội</span></p>
+            <p><strong>📍 Văn Phòng Kinh Doanh:</strong><br /><span data-i18n="offices.hanoiBizAddr">100 Đồng Cổ, P. Bưởi, Q. Tây Hồ, Hà Nội</span></p>
+            <p><span data-i18n="offices.phoneVN">Điện thoại tại Việt Nam:</span> <strong>+84 94 9686 098</strong></p>
+            <p><span data-i18n="offices.email">Email Liên Hệ:</span> <strong>info@carrickgroup.co.uk</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consultation Modal -->
+  <div class="modal-overlay" id="consultation-modal">
+    <div class="modal-box glass-card">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <h3 style="font-family: var(--font-serif); color: var(--color-gold-primary); margin-bottom: 6px;" data-i18n="modal.title">Đăng Ký Tư Vấn Trực Tiếp</h3>
+      <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: 20px;" data-i18n="modal.subtitle">Trao đổi 1:1 cùng Bà Anh Đào Carrick và chuyên gia giáo dục Anh Quốc.</p>
+
+      <form id="consultation-form">
+        <div class="form-group">
+          <label data-i18n="modal.nameLabel">Họ và Tên Phụ Huynh / Học Sinh *</label>
+          <input type="text" id="modal-name" required placeholder="Nguyễn Văn A" />
+        </div>
+
+        <div class="form-group">
+          <label data-i18n="modal.phoneLabel">Số Điện Thoại / Zalo / WhatsApp *</label>
+          <input type="text" id="modal-phone" required placeholder="+84 912 345 678 / +44 749..." />
+        </div>
+
+        <div class="form-group">
+          <label data-i18n="modal.emailLabel">Địa Chỉ Email *</label>
+          <input type="email" id="modal-email" required placeholder="example@gmail.com" />
+        </div>
+
+        <div class="form-group">
+          <label data-i18n="modal.serviceLabel">Dịch Vụ Cần Tư Vấn Chính</label>
+          <select id="modal-service">
+            <option value="Boarding School" data-i18n="modal.serviceOption1">Xin Học Trường Nội Trú / A-Levels</option>
+            <option value="University" data-i18n="modal.serviceOption2">Nộp Hồ Sơ Đại Học Top UK</option>
+            <option value="Accommodation" data-i18n="modal.serviceOption3">Tìm Nhà Ở / Căn Hộ Du Học</option>
+            <option value="Guardianship" data-i18n="modal.serviceOption4">Người Giám Hộ & Trọn Gói Định Cư</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label data-i18n="modal.messageLabel">Nhu cầu cụ thể hoặc câu hỏi của Quý vị</label>
+          <textarea id="modal-message" rows="3" placeholder="Ví dụ: Mong muốn xin học A-Level trường nội trú năm 2026..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-gold" style="width: 100%; margin-top: 10px;" data-i18n="modal.submitBtn">Gửi Yêu Cầu Qua Zalo / WhatsApp / Email</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating Contact Buttons -->
+  <div class="floating-widget">
+    <a href="https://wa.me/447490130207" target="_blank" class="widget-btn widget-wa" title="Chat WhatsApp UK">+44</a>
+    <a href="https://zalo.me/84949686098" target="_blank" class="widget-btn widget-zalo" title="Chat Zalo Vietnam">ZALO</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p data-i18n="footer.rights">© 2026 Công Ty TNHH Đầu Tư Carrick (Carrick Investment Co., Ltd). Bảo lưu mọi quyền.</p>
+    <p style="margin-top: 4px; font-size: 0.78rem;" data-i18n="footer.regNo">Đăng ký kinh doanh tại Anh Quốc & Việt Nam | Giám đốc: Anh Đào Carrick (FCCA)</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
