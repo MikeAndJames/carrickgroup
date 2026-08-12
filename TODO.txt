@@ -1,0 +1,55 @@
+====================================================================
+CARRICK GROUP WEBSITE - DEPLOYMENT TODO FOR MIKE
+====================================================================
+
+Hi Mike! Everything is built, styled, tested, and committed to GitHub.
+Website Repo: https://github.com/MikeAndJames/carrickgroup
+Vercel Project: carrickgroup.vercel.app (Vercel account: majic2)
+
+Here is your final step-by-step checklist to complete tomorrow:
+
+--------------------------------------------------------------------
+STEP 1: Log into GoDaddy
+--------------------------------------------------------------------
+1. Log into GoDaddy (account.godaddy.com/products).
+2. Authorize via Mum's phone 2FA code.
+3. Click "DNS" next to the domain "carrickgroup.co.uk".
+
+--------------------------------------------------------------------
+STEP 2: Clean up Old Hacked Server Records
+--------------------------------------------------------------------
+1. In the DNS records table, find the old record:
+   - Type: A | Name: @ | Value: 192.124.249.156
+   - Click the Trash Can (Delete) icon to delete it.
+2. If there is a record named "sucuriip", click Trash Can (Delete) to delete it too.
+
+*NOTE: DO NOT delete any email/Outlook records (autodiscover, msoid, secureserver) or NS records! Those keep Mum's email working.*
+
+--------------------------------------------------------------------
+STEP 3: Add New Vercel Records to GoDaddy
+--------------------------------------------------------------------
+1. Click "Add New Record":
+   - Type: A
+   - Name: @
+   - Value: 76.76.21.21
+   - TTL: 1 Hour
+   - Click Save.
+
+2. Edit or Add the "www" CNAME record:
+   - Type: CNAME
+   - Name: www
+   - Value: cname.vercel-dns.com
+   - TTL: 1 Hour
+   - Click Save.
+
+--------------------------------------------------------------------
+STEP 4: Verify in Vercel
+--------------------------------------------------------------------
+1. Open Vercel (vercel.com/majic2).
+2. Open the "carrickgroup" project -> Settings -> Domains.
+3. If not already added, click "Add Existing" -> type "carrickgroup.co.uk" -> Add both domain & www.
+4. Click "Refresh". Vercel will turn green (Valid Configuration) and issue the SSL security certificate automatically!
+
+====================================================================
+All Done! Mum's website will be live at https://carrickgroup.co.uk !
+====================================================================
