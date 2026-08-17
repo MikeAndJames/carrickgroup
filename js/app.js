@@ -102,7 +102,7 @@ function sendInquiry(channel) {
   if (channel === 'wa') {
     window.open(`https://wa.me/447490130207?text=${text}`, '_blank');
   } else {
-    window.open(`https://zalo.me/84949686098`, '_blank');
+    window.open(`https://zalo.me/84888763388`, '_blank');
   }
 
   const modal = document.getElementById('consultation-modal');

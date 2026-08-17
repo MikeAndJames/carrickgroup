@@ -75,11 +75,11 @@ const TRANSLATIONS = {
       londonBranch: "C&T Accountants Office",
       londonBranchAddr: "85 Tooting High Street, London, SW17 0SU, United Kingdom",
       hanoiHead: "Hanoi Head Office",
-      hanoiHeadAddr: "No.28 (3B5), 28B Dien Bien Phu Str, Ba Dinh Ward, Hanoi, Vietnam",
+      hanoiHeadAddr: "No.3, B5 House, TTQD 28 Dien Bien Phu Str, Ba Dinh Ward, Hanoi, Vietnam",
       hanoiBiz: "Hanoi Business Office",
-      hanoiBizAddr: "100 Dong Co Str, Tay Ho Ward, Hanoi, Vietnam",
+      hanoiBizAddr: "No. 125, Group 35, Cluster 7, Tay Ho Ward, Hanoi, Vietnam",
       phoneUK: "UK Phone / WhatsApp / Viber / Zalo:",
-      phoneVN: "Vietnam Phone:",
+      phoneVN: "Vietnam Phone / WhatsApp / Viber / Zalo:",
       email: "Email Enquiries:"
     },
     footer: {
@@ -176,11 +176,11 @@ const TRANSLATIONS = {
       londonBranch: "Văn Phòng C&T Accountants",
       londonBranchAddr: "85 Tooting High Street, London, SW17 0SU, Vương Quốc Anh",
       hanoiHead: "Trụ Sở Chính Tại Hà Nội",
-      hanoiHeadAddr: "Số 28 (Dãy B5), 28B Điện Biên Phủ, P. Điện Biên, Q. Ba Đình, Hà Nội",
+      hanoiHeadAddr: "Số 3, nhà B5, TTQĐ 28 Điện Biên Phủ, P. Ba Đình, Hà Nội",
       hanoiBiz: "Văn Phòng Kinh Doanh Hà Nội",
-      hanoiBizAddr: "100 Đồng Cổ, P. Bưởi, Q. Tây Hồ, Hà Nội",
+      hanoiBizAddr: "Số 125, tổ 35, cụm 7, P. Tây Hồ, Hà Nội",
       phoneUK: "Điện thoại / WhatsApp / Viber / Zalo (UK):",
-      phoneVN: "Điện thoại tại Việt Nam:",
+      phoneVN: "Điện thoại / WhatsApp / Viber / Zalo:",
       email: "Email Liên Hệ:"
     },
     footer: {
