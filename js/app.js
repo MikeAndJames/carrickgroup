@@ -32,8 +32,8 @@ function applyLanguage() {
   const langToggleBtn = document.getElementById('lang-toggle-btn');
   if (langToggleBtn) {
     langToggleBtn.innerHTML = currentLang === 'en' 
-      ? `🇻🇳 <span>Chuyển sang Tiếng Việt</span>` 
-      : `🇬🇧 <span>Switch to English</span>`;
+      ? `🇻🇳 <span>Tiếng Việt</span>` 
+      : `🇬🇧 <span>English</span>`;
     langToggleBtn.title = currentLang === 'en'
       ? 'Chuyển đổi giao diện sang Tiếng Việt'
       : 'Switch website interface to English';

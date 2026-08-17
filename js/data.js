@@ -6,7 +6,7 @@ const TRANSLATIONS = {
       home: "Home",
       about: "About Us",
       services: "Services",
-      pathways: "UK Study Pathways",
+      pathways: "UK Pathways",
       offices: "Our Offices",
       contact: "Contact Us",
       tagline: "UK Education & Relocation Advisory"
@@ -105,9 +105,9 @@ const TRANSLATIONS = {
   vi: {
     nav: {
       home: "Trang chủ",
-      about: "Bà Anh Đào Carrick",
+      about: "Giới thiệu",
       services: "Dịch vụ",
-      pathways: "Lộ Trình Du Học",
+      pathways: "Lộ trình du học",
       offices: "Văn phòng",
       contact: "Liên Hệ",
       tagline: "Tư Vấn Du Học & Định Cư UK"
